@@ -1,6 +1,6 @@
 Why is this Website called Jounce? Well, it's as simple as a snap ... literally.
 
-To start, this is a neat little site where you can get constantly updated information on your favourite documentaries.
+To start, this is a neat little site where you can get constantly updated information on your favourite space documentaries.
 
 Whether you want posters, descriptions, trailers, or a list of cast members, we have it all! Everything can be found in a snap due to the simple layout of the website.
 
