@@ -4,14 +4,6 @@
   box-sizing: border-box;
 }
 
-header {
-  padding: 1rem;
-}
-
-header h1 {
-  text-align: center;
-}
-
 #movies {
   display: grid;
   padding: 1rem;
