@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+#front-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 90%;
+}
+
+.intro {
+  position: relative;
+  display: grid;
+}
+
 #movies {
   display: grid;
   padding: 1rem;
