@@ -18,6 +18,7 @@
   text-align: center;
   color: whitesmoke;
   padding-bottom: 250px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .hero-image {
@@ -32,6 +33,7 @@
   position: relative;
   display: grid;
   padding-top: 20px;
+  font-weight:400;
 }
 
 #movies {
@@ -67,6 +69,7 @@ img {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Change the color of links on hover */
@@ -85,9 +88,10 @@ img {
 .dropbtn {
   background-color: rgb(0, 91, 170);
   color: white;
-  padding: 16px;
-  font-size: 16px;
+  padding: 14px 16px;
+  font-size: 17px;
   border: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -104,14 +108,18 @@ img {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
   color: rgb(255, 255, 255);
-  padding: 12px 16px;
+  padding: 14px 16px;
+  font-size: 17px;
   text-decoration: none;
   display: block;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 /* Change color of dropdown links on hover */
