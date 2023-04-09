@@ -80,7 +80,7 @@ img {
 
 /* Style the "active" element to highlight the current page */
 .topnav a.active {
-  background-color: #363636;
+  background-color: rgb(80, 80, 80);
   color: white;
 }
 
