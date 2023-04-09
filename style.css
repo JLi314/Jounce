@@ -74,7 +74,7 @@ img {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: whitesmoke;
   color: black;
 }
 
@@ -124,7 +124,7 @@ img {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 /* Show the dropdown menu on hover */
