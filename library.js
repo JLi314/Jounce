@@ -11,19 +11,24 @@ const createMovieTile = (id, poster, title, date, description) => {
   const h1 = document.createElement("h1");
   const h3 = document.createElement("h3");
   const h4 = document.createElement("h4");
+  // const count = document.createElement("count");
 
   tile.classList.add("tile");
   img.src = `https://image.tmdb.org/t/p/w500/${poster}`;
   h1.innerText = title;
   h3.innerText = date;
   h4.innerText = description;
+  // count.innerText = 1;
 
   details.append(h1);
   details.append(h3);
   details.append(h4);
 
+  // count.append(count);
+
   tile.append(img);
   tile.append(details);
+  // tile.append(count);
 
   return tile;
 };
