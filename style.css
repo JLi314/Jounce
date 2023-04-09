@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Home Page Styles */
 .hero {
   display: grid;
   height: 100%;
@@ -36,6 +37,7 @@
   font-weight:400;
 }
 
+/* Library Page Styles */
 #movies {
   display: grid;
   padding: 1rem;
@@ -54,6 +56,17 @@ img {
   width: 200px;
 }
 
+/* Specific Movies Page Styles */
+.movieInfo {
+  display:grid;
+  
+}
+
+#poster-img {
+  width: 300px;
+}
+
+/* Topnav Styles */
 /* Add a black background color to the top navigation bar */
 .topnav {
   overflow: hidden;
