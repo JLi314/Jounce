@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  /* overflow-x: hidden;  To avoid side scroll bars with slide in, but it makes the images look weird, fix later*/
 }
 
 /* Home Page Styles */
