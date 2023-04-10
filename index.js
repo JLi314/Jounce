@@ -3,14 +3,14 @@ const faders = document.querySelectorAll(".fade-in");
 
 const appearOptions = {
   threshold: 0,
-  rootMargin: "0px 0px -250px 0px"
+  rootMargin: "0px 0px -250px 0px",
 };
 
-const appearOnScroll = new IntersectionObserver(function(
+const appearOnScroll = new IntersectionObserver(function (
   entries,
   appearOnScroll
 ) {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     if (!entry.isIntersecting) {
       return;
     } else {
@@ -21,7 +21,7 @@ const appearOnScroll = new IntersectionObserver(function(
 },
 appearOptions);
 
-faders.forEach(fader => {
+faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
 

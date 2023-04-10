@@ -32,7 +32,7 @@ document.getElementById("movieReleaseDate").innerHTML =
 document.getElementById("movieId").innerHTML = movieData.results[x].id;
 document.getElementById("movieOriginalLanguages").innerHTML =
   movieData.results[x].original_language;
-  document.getElementById("movieVideo").innerHTML = movieData.results[x].video;
+document.getElementById("movieVideo").innerHTML = movieData.results[x].video;
 document.getElementById("movieVoteAverage").innerHTML =
   movieData.results[x].vote_average;
 document.getElementById("movieVoteCount").innerHTML =
@@ -46,4 +46,4 @@ posterImg.setAttribute("id", "poster-img");
 const backdropImg = document.createElement("img");
 backdropImg.src = `https://image.tmdb.org/t/p/original/${movieData.results[x].backdrop_path}`;
 document.body.appendChild(backdropImg);
-backdropImg.setAttribute('img', 'backdrop-img')
+backdropImg.setAttribute("img", "backdrop-img");
