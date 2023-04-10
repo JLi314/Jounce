@@ -20,7 +20,7 @@
       <div class="dropdown">
         <button class="dropbtn">Get Movie</button>
         <div class="dropdown-content">
-          <a class="active" href="./movie.html">1</a>
+          <a class="active" value="0" href="./movie.html">1</a>
           <a>2</a>
           <a>3</a>
           <a>4</a>
@@ -40,16 +40,26 @@
           <a>18</a>
           <a>19</a>
           <a>20</a>
-        </div>
+        </div> 
       </div>
+      <select name="listOfMovies" id="menu">
+        <option value="0">1</option>
+        <option value="1">2</option>
+        <option value="2">3</option>
+        <option value="3">4</option>
+        <option value="4">5</option>
+        <option value="5">6</option>
+        <option value="6">7</option>
+        <option value="7">8</option>
+        <option value="8">9</option>
+        <option value="9">10</option>
+    </select>
+    <button class="btn">Get</button>
     </div>
-
-    <div id="movies"></div>
-    <script type="module" src="movie.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 
     <div class="movieInfo">
       <p id="movieTitle"></p>
+      <img id="poster-img" src="">
       <p>Date Released</p>
       <p id="movieReleaseDate"></p>
       <p>Movie Description</p>
@@ -67,5 +77,9 @@
       <p>Vote Average:</p>
       <p id="movieVoteAverage"></p>
     </div>
+
+
+  <script type="module" src="movie.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </body>
 </html>
