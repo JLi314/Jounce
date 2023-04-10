@@ -8,15 +8,17 @@ const movieData = await getData(
   `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&page=1&with_watch_monetization_types=flatrate&with_genres=99&with_keywords=9882`
 );
 
-const btn = document.querySelector('.btn');
-function getMovieData() {
-  console.log(document.getElementById("menu").value);
-  return document.getElementById("menu").value;
-}
+let x = 0;
 
-btn.addEventListener('click', getMovieData);
+// const btn = document.querySelector('.btn');
+// function getMovieData() {
+//   console.log(document.getElementById("menu").value);
+//   return document.getElementById("menu").value;
+// }
 
-let x = getMovieData();
+// btn.addEventListener('click', getMovieData);
+
+// let x = getMovieData();
 // console.log(x);
 
 document.getElementById("movieTitle").innerHTML = movieData.results[x].title;
