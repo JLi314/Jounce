@@ -4,6 +4,16 @@ const getTMDBData = async (url) => {
   return (await axios.get(url)).data;
 };
 
+window.onload = () => {
+  const box = document.createElement("div");
+  box.id = "menu";
+  document.body.appendChild(box);
+
+  //appendchild span to div and add an event listener for the onclick, then assign value to it and trigger a function below to load the updated material in the same dom as the library by clearing it first.
+};
+
+//Create the drop down elements with js. Load each on click with span by changing a div down below
+
 const createMovieTile = (id, poster, title, date, description) => {
   const tile = document.createElement("div");
   const details = document.createElement("div");
