@@ -1,4 +1,4 @@
-import API_KEY from "./key.js";
+import API_KEY from "../key.js";
 
 const getData = async (url) => {
   return (await axios.get(url)).data;
