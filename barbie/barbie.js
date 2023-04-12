@@ -30,10 +30,11 @@ async function getMovieData() {
   ).innerHTML = `Popularity: ${movieData.popularity}`;
   document.getElementById(
     "voteAverage"
-  ).innerHTML = `Vote Average: ${movieData.vote_average}`;
+  ).innerHTML = `How much did the 6 year olds like this movie? (Vote Average): ${movieData.vote_average}`;
   document.getElementById(
     "voteCount"
-  ).innerHTML = `Vote Count: ${movieData.vote_count}`;
+  ).innerHTML = `How many 6 year old's contributed to the democratically generated number above? (Vote Count): ${movieData.vote_count}`;
+  document.getElementById("revenue").innerHTML = `Money spent by parent's on their greasy ipad kid's tv addiction (Revenue): $${movieData.revenue}`;
   document.getElementById("budget").innerHTML = `Budget: $${movieData.budget}` + "... but it's actually priceless!";
   document.getElementById("overview").innerHTML = "Overview: " + movieData.overview;
 
@@ -45,6 +46,5 @@ async function getMovieData() {
     !trailer.length
       ? alert("SIKE! You just got VECTORED, there are no trailers for this film!!!")
       : window.open(`https://www.youtube.com/watch?v=${trailer.at(0).key}`)
-    // location.href = `https://www.youtube.com/watch?v=${trailer.at(0).key}`
   }
 }
