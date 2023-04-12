@@ -17,6 +17,7 @@
     <div class="topnav">
       <a href="./index.html">Home</a>
       <a href="./library.html">Library</a>
+      <a class="active" href="./movie.html">Movie</a>
       <div class="dropdown">
         <button class="dropbtn">Get Movie</button>
         <div class="dropdown-content">
@@ -43,7 +44,7 @@
         </div>
       </div>
       <!-- SECOND ATTEMPT -->
-      <!-- <select name="listOfMovies" id="menu">
+      <select name="listOfMovies" id="menu">
         <option value="0">1</option>
         <option value="1">2</option>
         <option value="2">3</option>
@@ -55,8 +56,11 @@
         <option value="8">9</option>
         <option value="9">10</option>
     </select>
-    <button class="btn">Get</button> -->
+    <!-- <button id="btn">Get</button> -->
+    <button id="searchButton" onclick="Search()">Search</button>
+    <input type="text" id="searchBar">
     </div>
+
 
     <div class="movieInfo">
       <p id="movieTitle"></p>
