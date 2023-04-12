@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jounce - Library</title>
+    <script defer type="module" src="barbie.js"></script>
     <link rel="stylesheet" href="../style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
@@ -13,7 +15,6 @@
     />
   </head>
   <body>
-    <script type="module" src="barbie.js"></script>
     <div class="topnav">
       <a href="../index.html">Home</a>
       <a href="../library/library.html">Library</a>
@@ -45,13 +46,10 @@
       <p id="popularity"></p>
       <p id="voteAverage"></p>
       <p id="voteCount"></p>
+      <p id="revenue"></p>
       <p id="budget"></p>
       <p id="overview"></p>
       <button id="trailer"></button>
   </div>
-
-    <div id="movies"></div>
-    <form></form>
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </body>
 </html>
