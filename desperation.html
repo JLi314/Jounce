@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jounce - Library</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="./index.html">Home</a>
+      <a href="./library.html">Library</a>
+      <a class="active" href="./desperation.html">Last minute sketchy page to save this godamn assignment. I hope you like Barbie, Mr. Qayum </a>
+    </div>
+
+    <select name="listOfMovies" id="menu">
+      <option value="13002">Barbie in The 12 Dancing Princesses</option>
+      <option value="1093349">Barbie: Beating Dora Up</option>
+      <option value="16418">Barbie Presents: How to shoot and cook squirrels </option>
+      <option value="377897">Barbie: Secrets to be successful in the underground bootleg shoe buisness </option>
+      <option value="1012801">Barbie: Goes for a swim and drowns to trash the ocean with even more plastic </option>
+      <option value="1034470">Barbie: Crying because Ken cheated on her with Skipper</option>
+      <option value="73456">Barbie: Plot twist, Barbie actually cheated on ken with the milkman </option>
+      <option value="44874">Barbie: Trapping Twilight Sparkles to profit off her magic sparkles to fund Barbie's shopping addiction</option>
+      <option value="15016">Barbie: Influencing young girls to adopt unattainable beauty standards </option>
+      <option value="13004">Barbie: EPIC FIGHT SCENE between Barbie and her inner thoughts about which pair of shoes she should wear next</option>
+  </select>
+
+  <button id="btn">Get</button>
+
+    <div id="movieInfo">
+      <img id="poster" src="">
+      <h1 id="title"></h1>
+      <h3 id="tagline"></h3>
+      <h3 id="status"></h3>
+      <p id="popularity"></p>
+      <p id="voteAverage"></p>
+      <p id="voteCount"></p>
+      <p id="budget"></p>
+      <p id="overview"></p>
+
+  </div>
+
+    <div id="movies"></div>
+    <form></form>
+    <script type="module" src="desperation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </body>
+</html>
