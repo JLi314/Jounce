@@ -4,16 +4,6 @@ const getTMDBData = async (url) => {
   return (await axios.get(url)).data;
 };
 
-window.onload = () => {
-  const box = document.createElement("div");
-  box.id = "menu";
-  document.body.appendChild(box);
-
-  //appendchild span to div and add an event listener for the onclick, then assign value to it and trigger a function below to load the updated material in the same dom as the library by clearing it first.
-};
-
-//Create the drop down elements with js. Load each on click with span by changing a div down below
-
 const createMovieTile = (id, poster, title, date, description) => {
   const tile = document.createElement("div");
   const details = document.createElement("div");
@@ -55,5 +45,71 @@ movieData.results.forEach((movie) => {
     movie.release_date,
     movie.overview
   );
+  // console.log(movie.id);
   movies.appendChild(tile);
 });
+
+
+window.onload = () => {
+  const selectBox = document.createElement("div");
+  selectBox.id = "menu";
+  document.body.appendChild(selectBox);
+
+  // const choices = document.createElement("span");
+  // choices.innerHTML = "Movie" + x;
+
+  // selectBox.appendChild(choices);
+
+  // choices.addEventListener("click", getMovieData);
+
+  let selectionCounter = 1;
+
+  movieData.results.forEach((movie) => {
+    const choices = document.createElement("span");
+    choices.setAttribute("id", movie.id);
+    choices.setAttribute("type", "button")
+    choices.innerHTML = "Movie" + selectionCounter;
+    selectBox.appendChild(choices);
+
+    console.log(choices.id);
+
+    selectBox.addEventListener("click", getMovieData(movie.id)) // Want to apply event listener to specific ids of choices, not working
+    // choices.addEventListener("click", getMovieData(selectionCounter));
+
+    selectionCounter++;
+  });
+
+  // selectBox.addEventListener("click", getMovieData(document.selectBox))
+
+  // document.selectBox.choices.forEach((choice) => {
+  //   console.log(choice);
+  // })
+
+
+  // function getMovieData(x) {
+  //   const title = document.createElement("span");
+  //   title.innerHTML = movieData.results.title;
+  //   selectBox.appendChild(title);
+ 
+  //   const movieOverview = document.createElement("span");
+  //   movieOverview.innerHTML = movieData.results.overview;
+  //   selectBox.appendChild(movieOverview);
+  // }
+
+  // appendchild span to div and add an event listener for the onclick, then assign value to it and trigger a function below to load the updated material in the same dom as the library by clearing it first.
+};
+
+// let movieDabba = await getTMDBData(
+//   `https://api.themoviedb.org/3/movie/${selectBox.choices}?api_key=${API_KEY}&language=en-US`
+// ); 
+//Doesn't work because it can't be placed inside a function
+
+function getMovieData() {
+  const title = document.createElement("span");
+  title.innerHTML = movieData.results.title;
+  selectBox.appendChild(title);
+
+  const movieOverview = document.createElement("span");
+  movieOverview.innerHTML = movieData.results.overview;
+  selectBox.appendChild(movieOverview);
+}
