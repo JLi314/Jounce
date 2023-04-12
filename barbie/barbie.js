@@ -20,11 +20,11 @@ async function getMovieData() {
   );
   document.getElementById("poster").src =
     "https://image.tmdb.org/t/p/w500" + movieData.poster_path;
-  document.getElementById("title").innerHTML = movieData.title;
-  document.getElementById("tagline").innerHTML = movieData.tagline;
+  document.getElementById("title").innerHTML =  movieData.title;
+  document.getElementById("tagline").innerHTML = "The tagline used to brainwash the 6 year old girls => " +movieData.tagline;
   document.getElementById(
     "status"
-  ).innerHTML = `${movieData.status} ~ ${movieData.release_date}`;
+  ).innerHTML = `${movieData.status}: ${movieData.release_date}`;
   document.getElementById(
     "popularity"
   ).innerHTML = `Popularity: ${movieData.popularity}`;
@@ -45,6 +45,7 @@ async function getMovieData() {
     const trailer = movieData.videos.results.filter((trailer) => trailer.type === "Trailer");
     !trailer.length
       ? alert("SIKE! You just got VECTORED, there are no trailers for this film!!!")
-      : window.open(`https://www.youtube.com/watch?v=${trailer.at(0).key}`)
+      : location.href = `https://www.youtube.com/watch?v=${trailer.at(0).key}`
+
   }
 }
