@@ -20,7 +20,17 @@ const movieData = await getData(
 // let x = getMovieData();
 // console.log(x);
 
-let x = 0;
+document.getElementById("btn").addEventListener("click", getMovieID);
+
+function getMovieID() {
+  let movieID = parseInt(document.getElementById("menu").value);
+  console.log(movieID)
+  return movieID;
+}
+
+let x = getMovieID();
+
+console.log(x);
 
 document.getElementById("movieTitle").innerHTML = movieData.results[x].title;
 document.getElementById("movieOverview").innerHTML =
