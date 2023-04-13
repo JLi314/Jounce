@@ -98,6 +98,8 @@ img {
   font-size: 15px;
   color: rgb(255, 14, 135);
   padding: 2px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 .barbieInfo {
