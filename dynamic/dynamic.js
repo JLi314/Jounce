@@ -24,7 +24,7 @@ document.getElementById("btn").addEventListener("click", getMovieID);
 
 function getMovieID() {
   let movieID = parseInt(document.getElementById("menu").value);
-  console.log(movieID)
+  console.log(movieID);
   return movieID;
 }
 

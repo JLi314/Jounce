@@ -20,8 +20,10 @@ async function getMovieData() {
   );
   document.getElementById("poster").src =
     "https://image.tmdb.org/t/p/w500" + movieData.poster_path;
-  document.getElementById("title").innerHTML =  movieData.title;
-  document.getElementById("tagline").innerHTML = "The tagline used to brainwash the 6 year old girls => " +movieData.tagline;
+  document.getElementById("title").innerHTML = movieData.title;
+  document.getElementById("tagline").innerHTML =
+    "The tagline used to brainwash the 6 year old girls => " +
+    movieData.tagline;
   document.getElementById(
     "status"
   ).innerHTML = `${movieData.status}: ${movieData.release_date}`;
@@ -34,18 +36,28 @@ async function getMovieData() {
   document.getElementById(
     "voteCount"
   ).innerHTML = `How many 6 year old's contributed to the democratically generated number above? (Vote Count): ${movieData.vote_count}`;
-  document.getElementById("revenue").innerHTML = `Money spent by parent's on their greasy ipad kid's tv addiction (Revenue): $${movieData.revenue}`;
-  document.getElementById("budget").innerHTML = `Budget: $${movieData.budget}` + "... but it's actually priceless!";
-  document.getElementById("overview").innerHTML = "Overview: " + movieData.overview;
+  document.getElementById(
+    "revenue"
+  ).innerHTML = `Money spent by parent's on their greasy ipad kid's tv addiction (Revenue): $${movieData.revenue}`;
+  document.getElementById("budget").innerHTML =
+    `Budget: $${movieData.budget}` + "... but it's actually priceless!";
+  document.getElementById("overview").innerHTML =
+    "Overview: " + movieData.overview;
 
-  document.getElementById("trailer").innerHTML = "EXCITED NOW??? Well, here's the trailer!"
+  document.getElementById("trailer").innerHTML =
+    "EXCITED NOW??? Well, here's the trailer!";
 
   document.getElementById("trailer").addEventListener("click", fetchMovie);
   function fetchMovie() {
-    const trailer = movieData.videos.results.filter((trailer) => trailer.type === "Trailer");
+    const trailer = movieData.videos.results.filter(
+      (trailer) => trailer.type === "Trailer"
+    );
     !trailer.length
-      ? alert("SIKE! You just got VECTORED, there are no trailers for this film!!!")
-      : location.href = `https://www.youtube.com/watch?v=${trailer.at(0).key}`
-
+      ? alert(
+          "SIKE! You just got VECTORED, there are no trailers for this film!!!"
+        )
+      : (location.href = `https://www.youtube.com/watch?v=${
+          trailer.at(0).key
+        }`);
   }
 }

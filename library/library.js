@@ -49,7 +49,6 @@ movieData.results.forEach((movie) => {
   movies.appendChild(tile);
 });
 
-
 window.onload = () => {
   const selectBox = document.createElement("div");
   selectBox.id = "menu";
@@ -67,13 +66,13 @@ window.onload = () => {
   movieData.results.forEach((movie) => {
     const choices = document.createElement("span");
     choices.setAttribute("id", movie.id);
-    choices.setAttribute("type", "button")
+    choices.setAttribute("type", "button");
     choices.innerHTML = "Movie" + selectionCounter;
     selectBox.appendChild(choices);
 
     console.log(choices.id);
 
-    selectBox.addEventListener("click", getMovieData(movie.id)) // Want to apply event listener to specific ids of choices, not working
+    selectBox.addEventListener("click", getMovieData(movie.id)); // Want to apply event listener to specific ids of choices, not working
     // choices.addEventListener("click", getMovieData(selectionCounter));
 
     selectionCounter++;
@@ -85,12 +84,11 @@ window.onload = () => {
   //   console.log(choice);
   // })
 
-
   // function getMovieData(x) {
   //   const title = document.createElement("span");
   //   title.innerHTML = movieData.results.title;
   //   selectBox.appendChild(title);
- 
+
   //   const movieOverview = document.createElement("span");
   //   movieOverview.innerHTML = movieData.results.overview;
   //   selectBox.appendChild(movieOverview);
@@ -101,7 +99,7 @@ window.onload = () => {
 
 // let movieDabba = await getTMDBData(
 //   `https://api.themoviedb.org/3/movie/${selectBox.choices}?api_key=${API_KEY}&language=en-US`
-// ); 
+// );
 //Doesn't work because it can't be placed inside a function
 
 function getMovieData() {
