@@ -94,6 +94,12 @@ img {
   padding: 25px;
 }
 
+#menu {
+  font-size: 15px;
+  color: rgb(255, 14, 135);
+  padding: 2px;
+}
+
 .barbieInfo {
   font-size: 20px;
   margin: 10px;
