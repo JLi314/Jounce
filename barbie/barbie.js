@@ -29,7 +29,7 @@ async function getMovieData() {
   ).innerHTML = `${movieData.status}: ${movieData.release_date}`;
   document.getElementById(
     "popularity"
-  ).innerHTML = `Popularity: ${movieData.popularity}`;
+  ).innerHTML = `Popularity (IDK what this means): ${movieData.popularity}`;
   document.getElementById(
     "voteAverage"
   ).innerHTML = `How much did the 6 year olds like this movie? (Vote Average): ${movieData.vote_average}`;
