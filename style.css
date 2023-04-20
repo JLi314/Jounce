@@ -67,6 +67,21 @@
   opacity: 1;
 }
 
+@media screen and (min-height: 800px) {
+  .hero-image {
+    height: 130%;
+  }
+
+  .instructions0 {
+    padding-top: 425px;
+    padding-bottom: 275px;
+  }
+
+  .hero-content {
+    padding-bottom: 120px;
+  }
+}
+
 /* Library Page Styles */
 #movies {
   display: grid;
