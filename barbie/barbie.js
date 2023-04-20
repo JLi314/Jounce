@@ -43,10 +43,9 @@ async function getMovieData() {
     `Budget: $${movieData.budget}` + "... but it's actually priceless!";
   document.getElementById("overview").innerHTML =
     "Overview: " + movieData.overview;
-
   document.getElementById("trailer").innerHTML =
     "EXCITED NOW??? Well, here's the trailer!";
-
+    
   document.getElementById("trailer").addEventListener("click", fetchMovie);
   function fetchMovie() {
     const trailer = movieData.videos.results.filter(
