@@ -102,6 +102,10 @@ img {
   width: 200px;
 }
 
+#easter_egg {
+  font-family: "Montserrat", sans-serif;
+}
+
 /* Nature page styles */
 #documentary_info {
   padding: 25px;
