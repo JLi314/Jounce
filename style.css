@@ -121,6 +121,11 @@ img {
   font-weight: 500;
 }
 
+#nature_menu_padding {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
 /* Barbie page styles */
 .barbiePage {
   color: rgb(255, 49, 152);
