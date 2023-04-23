@@ -10,7 +10,6 @@ document.getElementById("btn").addEventListener("click", async function () {
 
 function getMovieID() {
   let movieID = parseInt(document.getElementById("menu").value);
-  console.log(movieID);
   return movieID;
 }
 
