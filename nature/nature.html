@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jounce - Barbie</title>
+    <script defer type="module" src="nature.js"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="background-color: black">
+    <div class="topnav">
+      <a href="../index.html">Home</a>
+      <a href="../library/library.html">Library</a>
+      <a class="active" href="./nature.html">Nature</a>
+      <a href="../barbie.html"
+        >Sketchy page to save this vexatious assignment. I know you secretly
+        like Barbie, Mr. Qayum.
+      </a>
+    </div>
+
+    <!-- <div id="nature_hero"> -->
+    <select name="listOfMovies" id="nature_menu">
+      <option value="82953">Dynasties</option>
+      <option value="1044">Planet Earth</option>
+      <option value="68595">Planet Earth II</option>
+    </select>
+
+    <button id="btn">Get</button>
+
+    <div id="documentary_info">
+      <img class="nature_info" id="poster" src="" />
+      <h1 class="nature_info" id="title"></h1>
+      <h3 class="nature_info" id="first_aired"></h3>
+      <h3 class="nature_info" id="number_of_episodes"></h3>
+      <p class="nature_info" id="overview"></p>
+      <div style="padding-top:15px; padding-bottom:50px">
+        <iframe id="trailer" hidden></iframe>
+      </div>
+      <h2 class="nature_info" id="latest_episode"></h2>
+      <h3 class="nature_info" id="latest_air_date"></h3>
+      <p class="nature_info" id="latest_overview"></p>
+    </div>
+    <!-- </div> -->
+  </body>
+</html>
