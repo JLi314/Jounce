@@ -29,7 +29,9 @@ async function getMovieData() {
   document.getElementById("overview").innerHTML =
     "Overview: " + movieData.overview;
 
-    const trailer = document.getElementById("trailer");
+  const trailer = document.getElementById("trailer");
+  document.getElementById("trailer").width = "700";
+  document.getElementById("trailer").height = "400";
   trailer.style.display = "block";
   document.getElementById("trailer").src =
     "https://www.youtube.com/embed/" +
@@ -37,20 +39,17 @@ async function getMovieData() {
       .filter((trailer) => trailer.type === "Trailer")
       .at(0).key;
 
-    document.getElementById(
-      "latest_episode"
-    ).innerHTML = `Latest Episode: ${movieData.
-      last_episode_to_air.name}`;
+  document.getElementById(
+    "latest_episode"
+  ).innerHTML = `Latest Episode: ${movieData.last_episode_to_air.name}`;
 
-    document.getElementById(
-      "latest_air_date"
-    ).innerHTML = `Air Date: ${movieData.
-      last_episode_to_air.air_date}`;
+  document.getElementById(
+    "latest_air_date"
+  ).innerHTML = `Air Date: ${movieData.last_episode_to_air.air_date}`;
 
-    document.getElementById(
-      "latest_overview"
-    ).innerHTML = `${movieData.
-      last_episode_to_air.overview}`;
+  document.getElementById(
+    "latest_overview"
+  ).innerHTML = `${movieData.last_episode_to_air.overview}`;
 
-      // document.getElementById("nature_hero").style.backgroundImage = `url(https://image.tmdb.org/t/p/w500/${movieData.backdrop_path})`;
+  // document.getElementById("nature_hero").style.backgroundImage = `url(https://image.tmdb.org/t/p/w500/${movieData.backdrop_path})`;
 }
