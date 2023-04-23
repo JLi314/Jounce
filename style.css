@@ -76,7 +76,7 @@
     padding-top: 425px;
     padding-bottom: 275px;
   }
-  
+
   .hero-content {
     padding-bottom: 120px;
   }
@@ -100,6 +100,25 @@
 
 img {
   width: 200px;
+}
+
+/* Nature page styles */
+#documentary_info {
+  padding: 25px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nature_info {
+  padding-top: 10px;
+}
+
+#nature_menu {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  padding: 2px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 /* Barbie page styles */
