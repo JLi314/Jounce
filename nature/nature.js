@@ -50,6 +50,4 @@ async function getMovieData() {
   document.getElementById(
     "latest_overview"
   ).innerHTML = `${movieData.last_episode_to_air.overview}`;
-
-  // document.getElementById("nature_hero").style.backgroundImage = `url(https://image.tmdb.org/t/p/w500/${movieData.backdrop_path})`;
 }
