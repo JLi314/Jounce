@@ -127,7 +127,7 @@ img {
 
 #nature_menu {
   font-size: 15px;
-  color: rgb(0, 0, 0);
+  color: black;
   padding: 2px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -139,10 +139,10 @@ img {
 }
 
 .button {
-  background-color: #000000; /* Green */
-  border: 2px solid #ffffff;
+  background-color: black; 
+  border: 2px solid white;
   border-radius: 2px;
-  color: rgb(255, 255, 255);
+  color: white;
   padding: 2px 5px;
   text-align: center;
   text-decoration: none;
@@ -151,7 +151,7 @@ img {
 }
 
 .nature_trailer {
-  padding-top: 15px; 
+  padding-top: 15px;
   padding-bottom: 50px;
 }
 
