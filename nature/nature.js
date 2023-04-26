@@ -24,6 +24,9 @@ async function getMovieData() {
     "first_aired"
   ).innerHTML = `First Aired: ${movieData.first_air_date}`;
   document.getElementById(
+    "number_of_seasons"
+  ).innerHTML = `Number of Seasons: ${movieData.number_of_seasons}`;
+  document.getElementById(
     "number_of_episodes"
   ).innerHTML = `Number of Episodes: ${movieData.number_of_episodes}`;
   document.getElementById("overview").innerHTML =
