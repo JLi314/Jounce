@@ -117,6 +117,14 @@ img {
   padding-top: 10px;
 }
 
+#nature_main_info {
+  display: flex;
+}
+
+#nature_overview {
+  margin-left: 15px;
+}
+
 #nature_menu {
   font-size: 15px;
   color: rgb(0, 0, 0);

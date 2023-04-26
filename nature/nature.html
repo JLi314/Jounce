@@ -21,29 +21,32 @@
       <a class="active" href="./nature.html">Nature (page in progress)</a>
     </div>
 
-    <!-- <div id="nature_hero"> -->
     <div id="nature_menu_padding">
-    <select name="listOfMovies" id="nature_menu">
-      <option value="208230">Wild Isles</option>
-      <option value="95171">Prehistoric Planet</option>
-      <option value="119815">Attenborough's Life in Colour</option>
-      <option value="83880">Our Planet</option>
-      <option value="82953">Dynasties</option>
-      <option value="68595">Planet Earth II</option>
-      <option value="1044">Planet Earth</option>
-      <option value="8724">Frozen Planet</option>
-      <option value="16946">Life</option>
-      <option value="13579">The Blue Planet</option>
-    </select>
-    <button id="btn">Get</button>
-  </div>
+      <select name="listOfMovies" id="nature_menu">
+        <option value="208230">Wild Isles</option>
+        <option value="95171">Prehistoric Planet</option>
+        <option value="119815">Attenborough's Life in Colour</option>
+        <option value="83880">Our Planet</option>
+        <option value="82953">Dynasties</option>
+        <option value="68595">Planet Earth II</option>
+        <option value="1044">Planet Earth</option>
+        <option value="8724">Frozen Planet</option>
+        <option value="16946">Life</option>
+        <option value="13579">The Blue Planet</option>
+      </select>
+      <button id="btn">Get</button>
+    </div>
 
     <div id="documentary_info">
-      <img class="nature_info" id="poster" src="" />
-      <h1 class="nature_info" id="title"></h1>
-      <h3 class="nature_info" id="first_aired"></h3>
-      <h3 class="nature_info" id="number_of_episodes"></h3>
-      <p class="nature_info" id="overview"></p>
+      <div id="nature_main_info">
+        <img id="poster" class="nature_info" src="" />
+        <div id="nature_overview">
+          <h1 class="nature_info" id="title"></h1>
+          <h3 class="nature_info" id="first_aired"></h3>
+          <h3 class="nature_info" id="number_of_episodes"></h3>
+          <p class="nature_info" id="overview"></p>
+        </div>
+      </div>
       <div style="padding-top: 15px; padding-bottom: 50px">
         <iframe id="trailer" hidden></iframe>
       </div>
@@ -51,6 +54,5 @@
       <h3 class="nature_info" id="latest_air_date"></h3>
       <p class="nature_info" id="latest_overview"></p>
     </div>
-    <!-- </div> -->
   </body>
 </html>
