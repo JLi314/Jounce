@@ -138,6 +138,23 @@ img {
   padding-top: 10px;
 }
 
+.button {
+  background-color: #000000; /* Green */
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  color: rgb(255, 255, 255);
+  padding: 2px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.nature_trailer {
+  padding-top: 15px; 
+  padding-bottom: 50px;
+}
+
 /* Barbie page styles */
 .barbiePage {
   color: rgb(255, 49, 152);
