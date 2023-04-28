@@ -38,8 +38,8 @@
 }
 
 .instructions0 {
-  padding-top: 150px;
-  padding-bottom: 125px;
+  padding-top: 120px;
+  padding-bottom: 55px;
 }
 
 .instructions1 {
@@ -55,7 +55,7 @@
   color: white;
   font-family: "Montserrat", sans-serif;
   padding: 20px;
-  width: 60%;
+  width: 65%;
   margin: auto;
 }
 
@@ -73,8 +73,8 @@
   }
 
   .instructions0 {
-    padding-top: 425px;
-    padding-bottom: 275px;
+    padding-top: 395px;
+    padding-bottom: 205px;
   }
 
   .hero-content {
